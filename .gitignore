@@ -1,0 +1,12 @@
+node_modules
+.changelog
+.umi
+.umi-test
+.umi-production
+.DS_Store
+/lib
+dist
+
+/package-lock.json
+/pnpm-lock.yaml
+/yarn.lock
