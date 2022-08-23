@@ -22,7 +22,7 @@ export default (api: IApi) => {
       return options;
     });
     config.plugin('copy').tap((options) => {
-      const { outputPath, cesiumPath } = api.config;
+      const { outputPath = 'dist', cesiumPath } = api.config;
       options[0].patterns.push({
         from: path.join(path.dirname(require.resolve('cesium')), '/Build/Cesium'),
         to: pathResolve(`${outputPath}/${cesiumPath}`),
